@@ -1,0 +1,14 @@
+
+html,body{margin:0;height:100%;overflow:hidden;font-family:Comic Sans MS,cursive}
+body{background:linear-gradient(45deg,#ff4fa3,#7b5cff,#00d4ff,#ffe14f);background-size:400% 400%;animation:bg 8s infinite alternate;text-align:center;color:#fff}
+@keyframes bg{to{background-position:100% 100%}}
+canvas{position:fixed;inset:0;z-index:-2}
+h1{font-size:4rem;margin:.4em 0;animation:b 1s infinite}
+@keyframes b{50%{transform:scale(1.05)}}
+#slot{display:flex;justify-content:center;gap:20px;font-size:5rem;margin:20px}
+.reel{width:100px;height:100px;background:#fff2;border:3px solid gold;border-radius:20px;display:flex;align-items:center;justify-content:center}
+button{font-size:1.4rem;padding:15px 30px;border-radius:40px;border:none;margin:10px;cursor:pointer}
+.unicorn,.cat,.balloon,.conf{position:fixed;pointer-events:none}
+#message{font-size:3rem;font-weight:bold;margin-top:20px;text-shadow:0 0 15px gold}
+.finale{animation:flash .4s infinite alternate}
+@keyframes flash{from{filter:hue-rotate(0)}to{filter:hue-rotate(180deg)}}
